@@ -9,6 +9,8 @@ class Post(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
     published_date = models.DateTimeField(blank=True, null=True)
+    #how can you revise an existing model?
+    #categories = models.ManyToManyField(Category, blank=True, related_name='categories')
 
     def __str__(self):
         return self.title
@@ -20,3 +22,7 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+class MediumClass(models.Model):
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)

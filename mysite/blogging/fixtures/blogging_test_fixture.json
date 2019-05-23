@@ -1,1 +1,38 @@
-[{"model": "blogging.post", "pk": 1, "fields": {"title": "Another post", "text": "The second one created", "author": 1, "created_date": "2019-05-15T05:14:45.458Z", "modified_date": "2019-05-22T03:31:01.678Z", "published_date": null}}, {"model": "blogging.post", "pk": 2, "fields": {"title": "first post", "text": "first post created", "author": 1, "created_date": "2019-05-15T05:19:21.111Z", "modified_date": "2019-05-15T05:19:21.111Z", "published_date": null}}, {"model": "blogging.post", "pk": 3, "fields": {"title": "Another post", "text": "second post created", "author": 1, "created_date": "2019-05-15T05:20:10.965Z", "modified_date": "2019-05-21T03:58:46.279Z", "published_date": "2019-05-16T03:58:44Z"}}, {"model": "blogging.post", "pk": 4, "fields": {"title": "third post", "text": "with the word 'heffalump'", "author": 1, "created_date": "2019-05-15T05:21:04.977Z", "modified_date": "2019-05-15T05:21:04.977Z", "published_date": null}}, {"model": "blogging.post", "pk": 5, "fields": {"title": "posters are great decoration", "text": "when youare a poor college students", "author": 1, "created_date": "2019-05-15T05:22:09.656Z", "modified_date": "2019-05-15T05:22:09.656Z", "published_date": null}}, {"model": "blogging.post", "pk": 6, "fields": {"title": "Drogon is the best pet.", "text": "Drogon loves his mom.", "author": 1, "created_date": "2019-05-20T07:42:09.168Z", "modified_date": "2019-05-22T03:28:15.450Z", "published_date": "2019-05-10T03:58:34Z"}}, {"model": "blogging.category", "pk": 1, "fields": {"name": "Random post", "description": "It can be about anything that you don't know which category to put.", "posts": [1, 2, 3, 4, 5]}}, {"model": "blogging.category", "pk": 2, "fields": {"name": "Pets", "description": "Posts about pets", "posts": [6]}}, {"model": "blogging.mediumclass", "pk": 1, "fields": {"post": 6, "category": 1}}, {"model": "blogging.mediumclass", "pk": 2, "fields": {"post": 1, "category": 2}}, {"model": "blogging.mediumclass", "pk": 3, "fields": {"post": 1, "category": 1}}]
+[
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "username": "admin",
+            "first_name": "Mr.",
+            "last_name": "Administrator",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2013-05-24T05:35:58.628Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$10000$1rQazFNdOfFt$6aw/uIrv2uASkZ7moXMTajSN+ySYuowBnbP6ILNQntE=",
+            "email": "admin@example.com",
+            "date_joined": "2013-05-24T05:35:58.628Z"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.user",
+        "fields": {
+            "username": "noname",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2013-05-24T05:35:58.628Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$10000$1rQazFNdOfFt$6aw/uIrv2uASkZ7moXMTajSN+ySYuowBnbP6ILNQntE=",
+            "email": "noname@example.com",
+            "date_joined": "2013-05-24T05:35:58.628Z"
+        }
+    }
+ ]
